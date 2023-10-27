@@ -1,7 +1,13 @@
-edad = int(input("Introduce tu edad: "))
-ingresos_mensuales = float(input("Introduce tus ingresos: "))
+def tributar(edad, ingresos):
+    if edad > 16 and ingresos >= 1000:
+        return "Debes tributar"
+    else:
+        return "No debes tributar"
+    
+def main():
+    edad = int(input("Introduce tu edad: "))
+    ingresos_mensuales = float(input("Introduce tus ingresos: "))
+    print(tributar(edad, ingresos_mensuales))
 
-if edad > 16 and ingresos_mensuales >= 1000:
-    print("Debes tributar.")
-else:
-    print("No debes tributar.")
+if __name__ == "__main__":
+    main()
