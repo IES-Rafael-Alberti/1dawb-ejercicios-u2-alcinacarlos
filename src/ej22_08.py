@@ -1,8 +1,8 @@
 def triangulo(numero):
     resultado = ""
     for i in range(1, numero + 1):
-        for i in range(i * 2 - 1, 0, -2):
-            resultado += str(i) + " "
+        for x in range(i * 2 - 1, 0, -2):
+            resultado += str(x) + " "
         resultado += "\n"
     return resultado
 
